@@ -1,0 +1,11 @@
+安裝App：
+adb install c:\test\Test_App03.apk
+
+查詢APP，不指定App名稱，會列出全部，如下：
+adb shell pm list packages
+
+查詢指定的APP
+adb shell pm list packages test_app03
+
+移除/刪除App：
+adb shell pm uninstall -k com.example.test_app03
